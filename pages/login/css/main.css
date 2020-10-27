@@ -1,0 +1,35 @@
+.content { display: flex; flex-direction: column; justify-content:center;}
+
+/* 头部 logo */
+.header { width:100%; height:160rpx; border-radius:50%; margin-top: 80rpx; margin-bottom: 140rpx; font-size: 32rpx;text-align: center;color: #1890ff;}
+.header image{ width:160rpx; height:160rpx; border-radius:50%;}
+.header view + view { font-size: 20rpx; }
+
+/* 主体 */
+.main { display: flex; flex-direction: column; padding-left: 70rpx; padding-bottom: 20rpx; padding-right: 70rpx;}
+.tips { color: #999999; font-size: 28rpx; margin-top: 64rpx; margin-left: 48rpx; }
+
+/* 登录按钮 */
+.ebutton{ margin-top: 96rpx;}
+
+/* 其他登录方式 */
+.other_login{display: flex;flex-direction: row;justify-content: center;align-items: center; text-align: center;margin-top: 120rpx;}
+.login_icon{border: none;font-size: 64rpx;margin: 0 64rpx 0 64rpx;color: #1890ff;}
+
+.font { font-size: 64rpx; }
+.navigator { color: #1890ff; }
+/* 底部 */
+.footer{display: flex;justify-content: center;
+	align-items: center;
+	font-size: 28rpx;
+	margin-top: 64rpx;
+	color: rgba(0,0,0,0.7);
+	text-align: center;
+	height: 40rpx;
+	line-height: 40rpx;
+}
+.footer text{
+	font-size: 24rpx;
+	margin-left: 15rpx;
+	margin-right: 15rpx;
+}

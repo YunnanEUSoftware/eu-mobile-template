@@ -1,0 +1,151 @@
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+
+/* 颜色变量 */
+
+/* 行为相关颜色 */
+$uni-color-primary: #007aff;
+$uni-color-success: #4cd964;
+$uni-color-warning: #f0ad4e;
+$uni-color-error: #dd524d;
+
+/* 文字基本颜色 */
+$uni-text-color:#333;//基本色
+$uni-text-color-inverse:#fff;//反色
+$uni-text-color-grey:#999;//辅助灰色，如加载更多的提示信息
+$uni-text-color-placeholder: #808080;
+$uni-text-color-disable:#c0c0c0;
+
+/* 背景颜色 */
+$uni-bg-color:#ffffff;
+$uni-bg-color-grey:#f8f8f8;
+$uni-bg-color-hover:#f1f1f1;//点击状态颜色
+$uni-bg-color-mask:rgba(0, 0, 0, 0.4);//遮罩颜色
+
+/* 边框颜色 */
+$uni-border-color:#c8c7cc;
+
+/* 尺寸变量 */
+
+/* 文字尺寸 */
+$uni-font-size-sm:24upx;
+$uni-font-size-base:28upx;
+$uni-font-size-lg:32upx;
+
+/* 图片尺寸 */
+$uni-img-size-sm:40upx;
+$uni-img-size-base:52upx;
+$uni-img-size-lg:80upx;
+
+/* Border Radius */
+$uni-border-radius-sm: 4upx;
+$uni-border-radius-base: 6upx;
+$uni-border-radius-lg: 12upx;
+$uni-border-radius-circle: 50%;
+
+/* 水平间距 */
+$uni-spacing-row-sm: 10px;
+$uni-spacing-row-base: 20upx;
+$uni-spacing-row-lg: 30upx;
+
+/* 垂直间距 */
+$uni-spacing-col-sm: 8upx;
+$uni-spacing-col-base: 16upx;
+$uni-spacing-col-lg: 24upx;
+
+/* 透明度 */
+$uni-opacity-disabled: 0.3; // 组件禁用态的透明度
+
+/* 文章场景相关 */
+$uni-color-title: #2C405A; // 文章标题颜色
+$uni-font-size-title:40upx;
+$uni-color-subtitle: #555555; // 二级标题颜色
+$uni-font-size-subtitle:36upx;
+$uni-color-paragraph: #3F536E; // 文章段落颜色
+$uni-font-size-paragraph:30upx;
+
+// @import 'utils/weui.wxss';
+
+/* @import 'template/Template.wxss'; */
+
+/* 组件 选择器 */
+.van-icon--image image { top: 0; left: 0; right: 0; bottom: 0; margin: auto; max-width: 100%; max-height: 100%; position: absolute;}
+.van-search input::-webkit-search-cancel-button,.van-search input::-webkit-search-decoration,.van-search input::-webkit-search-results-button,.van-search input::-webkit-search-results-decoration { display: none;}
+.van-tab span { display: block;}
+.van-tabbar-item__icon image { width: 50px; height: 18px}
+
+/* 占比 80% 60% 的button */
+.button_1 { position: fixed; bottom: 40rpx; width: 100%; line-height: 80rpx; color: #fff; background-color: #3399FF;}
+.button_2 { position: fixed; bottom: 40rpx; left: 4%; width: 92%; line-height: 80rpx; color: #fff; background-color: #3399FF;}
+.button_3 { position: fixed; bottom: 40rpx; left: 10%; width: 80%; line-height: 80rpx; color: #fff; background-color: #3399FF;}
+.button_4 { position: fixed; bottom: 40rpx; left: 20%; width: 60%; line-height: 80rpx; color: #fff; background-color: #3399FF;}
+
+/* 按钮 */
+
+.bottom_button { position: fixed; bottom: 0; width: 100%;text-align: center;  padding-bottom: 140rpx; font-size: 30rpx; background-color: #fff; height: 92rpx;}
+
+/* 空列表提示 */
+.empty { width:100%;text-align:center; margin-top:200rpx;}
+.empty image{ width: 80rpx; height: 80rpx;}
+
+.empty view{ font-size: 28rpx; color: #9b9b9b;}
+
+.list_ramark {line-height: 60rpx;}
+.list_ramark icon{ margin-right: 4rpx;}
+.list_ramark view{ font-size: 32rpx; color: #3399FF; text-align: center; width: 100%;}
+
+
+/* 加载中提示 */
+.loading { width:100%;text-align:center; margin-top:50%;}
+.loading view{ color: #3399FF;}
+/* 列表提示 */
+.list_loading {line-height: 60rpx;}
+.list_loading icon{ margin-right: 4rpx;}
+.list_loading view{ font-size: 32rpx; color: #3399FF; text-align: center; width: 100%;}
+
+/* 阴影 */
+.modal{ z-index: 25; width:100%;height:100%;top:0px; background:rgba(0,0,0,0); position:fixed;}
+.modal view{ width:100%;height:100%;}
+
+/* 输入框错误提示 */
+.border_err { border: 2rpx solid #F90000;}
+/* 阴影效果 */
+.shadow { -webkit-box-shadow: 1px 1px 5px #ccc; box-shadow: 1px 1px 5px #ccc; border-bottom: 0px solid darkgray; } 
+/* 超出隐藏 */
+.overload { overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.overloads { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden;}
+/* 占位隐藏 */
+.hidden_p { visibility: hidden;} 
+
+/* 颜色 */
+.color_bd0 { border: 2rpx solid #3399FF;} /* 主色 */
+.color_bd1 { border: 2rpx solid #F43138;} /* 副色 */
+.color_bd2 { border: 2rpx solid #aaa;}    /* 副色 */
+
+.color_0 { color: #3399FF;} /* 主色 */
+.color_1 { color: #F43138;} /* 副色 */
+.color_2 { color: #aaa;}    /* 副色 */
+.color_3 { color: #F7A039;} /* 副色 */
+.color_4 { color: #6A6868;} /* 副色 */
+.color_5 { color: #fff;}    /* 副色 */
+.color_6 { color: #259B24;}    /* 副色 */
+
+.color_bg0 { background-color: #3399FF;} /* 主色 */
+.color_bg1 { background-color: #F43138;} /* 副色 */
+.color_bg2 { background-color: #aaa;}    /* 副色 */
+.color_bg3 { background-color: #F7A039;} /* 副色 */
+.color_bg4 { background-color: #fff;}    /* 副色 */
+
+.baccol_0 { background-color: #c9c9c9; color: #fff;}
+.baccol_1 { background-color: #3399FF; color: #fff;}

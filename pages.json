@@ -1,0 +1,51 @@
+{
+    "pages": [ //pages数组中第一项表示应用启动页,
+        {
+            "path": "pages/login/login",
+            "style": {
+				"navigationBarTitleText": "登录"
+			}
+        }, {
+            "path": "pages/login/forget",
+            "style": {
+				"navigationBarTitleText": "忘记密码"
+			}
+        }, {
+            "path": "pages/login/register",
+            "style": {
+				"navigationBarTitleText": "注册"
+			}
+        },{
+            "path" : "pages/test/test",
+            "style" : {
+				"navigationBarTitleText": "demo"
+			}
+        },{
+            "path" : "pages/test/ePulloading",
+            "style" : {"navigationBarTitleText": "上拉加载"}
+        },{
+            "path" : "pages/test/flex",
+            "style" : {"navigationBarTitleText": "宫格"}
+        },{
+            "path" : "pages/test/eFooter",
+            "style" : {"navigationBarTitleText": "底部按钮"}
+        },{
+			"path" : "pages/test/ePullDownRefresh",
+			"style" : {"navigationBarTitleText": "下拉刷新"}
+		},{
+			"path" : "pages/personalCenter/personalCenter",
+			"style" : {"navigationBarTitleText": "个人中心"}
+		}
+        ,{
+            "path" : "pages/test/eLabel",
+            "style" : {}
+        }
+    ],
+    "globalStyle": {
+    	"navigationBarTextStyle": "black",
+    	"navigationBarTitleText": "登陆模板",
+    	"navigationBarBackgroundColor": "#F8F8F8",
+    	"backgroundColor": "#F8F8F8",
+    	"navigationStyle": "custom" //取消默认的原生导航栏
+    }
+}
