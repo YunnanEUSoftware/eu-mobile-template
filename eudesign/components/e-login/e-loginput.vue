@@ -99,7 +99,7 @@
 			_this=this
 			// #ifdef H5
 			if(this._isShowCode&&!this._isShowPass){
-				this.createCaptcha();
+				// this.createCaptcha();
 			}
 			// #endif
 			//准备触发

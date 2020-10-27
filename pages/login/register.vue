@@ -29,9 +29,8 @@
 
 <script>
 	var _this;
-	import eInput from '../../eudesign/components/e-loginput.vue' //input
-	import eButton from '../../eudesign/components/e-logbutton.vue' //button
-	import tools from '../../utils/jsTools.js'
+	import eInput from '../../eudesign/components/e-login/e-loginput.vue' //input
+	import eButton from '../../eudesign/components/e-login/e-logbutton.vue' //button
 	export default {
 		data() {
 			return {
@@ -55,7 +54,7 @@
 			},
 			getVerCode(){
 				//获取验证码
-				if (tools.check_phone(this.phoneData)){
+				if (this.$tools.check_phone(this.phoneData)){
 					this.$refs.runCode.$emit('runCode'); //触发倒计时（一般用于请求成功验证码后调用）
 					uni.showToast({
 					    icon: 'none',
@@ -123,6 +122,6 @@
 </script>
 
 <style>
-	@import url("../../eudesign/components/css/icon.css");
+	@import url("../../eudesign/components/e-login/css/icon.css");
 	@import url("./css/main.css");
 </style>

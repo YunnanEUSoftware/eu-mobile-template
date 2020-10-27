@@ -25,9 +25,8 @@
 
 <script>
 	var _this;
-	import eInput from '../../eudesign/components/e-loginput.vue' //input
-	import eButton from '../../eudesign/components/e-logbutton.vue' //button
-	import tools from '../../utils/jsTools.js'
+	import eInput from '../../eudesign/components/e-login/e-loginput.vue' //input
+	import eButton from '../../eudesign/components/e-login/e-logbutton.vue' //button
 	export default {
 		data() {
 			return {
@@ -47,7 +46,7 @@
 			getVerCode(){
 				//获取验证码
 				console.log(this.phoneData)
-				if (tools.check_phone(this.phoneData)){
+				if (this.$tools.check_phone(this.phoneData)){
 					this.$refs.runCode.$emit('runCode'); //触发倒计时（一般用于请求成功验证码后调用）
 					uni.showToast({
 					    icon: 'none',
@@ -76,19 +75,19 @@
 					//判断是否加载中，避免重复点击请求
 					return false;
 				}
-				if (!tools.check_phone(this.phoneData)){
+				if (!this.$tools.check_phone(this.phoneData)){
 					uni.showToast({
 						icon: 'none',
 						position: 'bottom',
 						title: '手机号不正确'
 					});
-				}else if(!tools.check_password(this.passData)){
+				}else if(!this.$tools.check_password(this.passData)){
 					uni.showToast({
 						icon: 'none',
 						position: 'bottom',
 						title: '密码不正确'
 					});
-				}else if(!tools.check_vc(this.verCode,6)){
+				}else if(!this.$tools.check_vc(this.verCode,6)){
 					uni.showToast({
 						icon: 'none',
 						position: 'bottom',
@@ -106,7 +105,7 @@
 </script>
 
 <style>
-	@import url("../../eudesign/components/css/icon.css");
+	@import url("../../eudesign/components/e-login/css/icon.css");
 	@import url("./css/main.css");
 </style>
 

@@ -12,8 +12,8 @@
 	</gracePage>
 </template>
 <script>
-import gracePage from "../graceUI/components/gracePage.vue";
-import graceEmptyNew from "../graceUI/components/graceEmptyNew.vue";
+import gracePage from "../../graceUI/components/gracePage.vue";
+import graceEmptyNew from "../../graceUI/components/graceEmptyNew.vue";
 export default {
 	data() {
 		return {}

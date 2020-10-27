@@ -40,16 +40,14 @@
 
 <script>
 	var _this;
-	import eInput from '../../eudesign/components/e-loginput.vue' //input
-	import eButton from '../../eudesign/components/e-logbutton.vue'
-	import tools from '../../utils/jsTools.js'
+	import eInput from '../../eudesign/components/e-login/e-loginput.vue' //input
+	import eButton from '../../eudesign/components/e-login/e-logbutton.vue'
 	export default {
 		components:{
 			eInput,eButton,
 		},
 		data() {
 			return {
-				
 				phoneData:'', //用户/电话
 				passData:'', //密码
 				isRotate: false, //是否加载旋转
@@ -69,13 +67,13 @@
 					//判断是否加载中，避免重复点击请求
 					return false;
 				}
-				if (!tools.check_phone(this.phoneData)){
+				if (!this.$tools.check_phone(this.phoneData)){
 					uni.showToast({
 						icon: 'none',
 						position: 'bottom',
 						title: '手机号不正确'
 					});
-				}else if(!tools.check_password(this.passData)){
+				}else if(!this.$tools.check_password(this.passData)){
 					uni.showToast({
 						icon: 'none',
 						position: 'bottom',
@@ -93,6 +91,6 @@
 </script>
 
 <style>
-	@import url("../../eudesign/components/css/icon.css");
+	@import url("../../eudesign/components/e-login/css/icon.css");
 	@import url("./css/main.css");
 </style>
