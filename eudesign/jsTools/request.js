@@ -30,7 +30,6 @@ export default {
 				};
 		}
 		var URL = app.globalData.URL + apiUrl;
-		// console.log(URL)
 		uni.request({ 
 			url: URL,
 			data: data,
@@ -46,6 +45,9 @@ export default {
 					return;
 				}
 				if (res.data.code == 10000) {
+					if(res.data.token){
+						this.setToken(res.data.token)
+					}
 					typeof success == "function" && success(res.data)
 				}else {
 					typeof fail == "function" && fail(res.data)

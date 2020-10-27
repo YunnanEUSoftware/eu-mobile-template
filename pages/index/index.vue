@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<eEmpty marginTop="100rpx" :isShow="isEmpty"></eEmpty>
+		
 	</view>
 </template>
 
@@ -17,6 +17,8 @@
 		},
 		
 		methods:{
+			
+			// 接口请求示例
 			request(){
 				this.$e.requestAPI(this.$API.apiUrl.LOGIN_OPENIDLOGIN, {} , function (res) {
 				

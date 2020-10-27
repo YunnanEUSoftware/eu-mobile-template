@@ -30,6 +30,9 @@ var globalData = {
 };
 
 Vue.prototype.$globalData = globalData;
+Vue.prototype.setToken = function(data){
+	globalData.token = data;
+}
 
 // 组件引用
 import eEmpty from 'eudesign/components/e-empty/e-empty.vue';
