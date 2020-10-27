@@ -97,11 +97,18 @@ getVerCode(){
 
 ### e-empty(空数据提示) 
 
+* 基本用法 
+* 
 ```
-<eEmpty marginTop="100rpx" :isShow="isEmpty"></eEmpty>
+<eEmpty 
+	isShow="false"（选填）
+	text="抱歉，没有搜索到任何数据"（选填）
+	src="https://staticimgs.oss-cn-beijing.aliyuncs.com/empty.png"（选填）
+	marginTop="100rpx" （选填）
+></eEmpty>
 ```
 
-> Button参数说明
+> e-empty参数说明
 
 | 参数 | 类型 | 默认 | 是否必选 | 说明 |  
 |-----|----|----|----|----|  
