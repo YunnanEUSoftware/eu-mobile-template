@@ -79,6 +79,8 @@ $uni-font-size-paragraph:30upx;
 
 /* @import 'template/Template.wxss'; */
 
+@import "uview-ui/theme.scss";
+
 /* 组件 选择器 */
 .van-icon--image image { top: 0; left: 0; right: 0; bottom: 0; margin: auto; max-width: 100%; max-height: 100%; position: absolute;}
 .van-search input::-webkit-search-cancel-button,.van-search input::-webkit-search-decoration,.van-search input::-webkit-search-results-button,.van-search input::-webkit-search-results-decoration { display: none;}

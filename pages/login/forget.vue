@@ -4,7 +4,7 @@
 		<view class="content">
 			<!-- 头部logo -->
 			<view class="header">
-				<image src='../../images/hre.jpg'></image>
+				<image src='../../static/hre.jpg'></image>
 				<view>彩云人力资源服务SaaS</view>
 				<view>Cloud Human Resources Service SaaS</view>
 			</view>
