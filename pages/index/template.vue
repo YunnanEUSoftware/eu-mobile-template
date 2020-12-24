@@ -40,7 +40,7 @@
 		methods:{
 			openPage(path) {
 				this.$u.route({ 
-					url: path
+					url: '/pages/template/' + path + '/index'
 				})
 			},
 			getFieldTitle(item) {

@@ -1,6 +1,7 @@
 {
 	"easycom": {
-		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue",
+		"^e-(.*)": "@/eudesign/components/e-$1/e-$1.vue"
 	},
     "pages": [ //pages数组中第一项表示应用启动页,
         {
@@ -33,22 +34,72 @@
            "style": {
            	"navigationBarTitleText": "登录"
            }
-            
-        }
-        ,{
+        },
+		{
             "path" : "pages/components/eEmpty/index",
             "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
+            { "navigationBarTitleText": "Empty 内容为空" }
+        },{
+            "path" : "pages/components/eGap/index",
+            "style" :
+            { "navigationBarTitleText": "Gap 间隔槽" }
+        },{
+            "path" : "pages/components/eSwiper/index",
+            "style" :
+            { "navigationBarTitleText": "Swiper 轮播图"}
+        },{
+            "path" : "pages/components/eAlert/index",
+            "style" :
+            { "navigationBarTitleText": "eAlert 提示框" }
+        },{
+            "path" : "pages/components/eButton/index",
+            "style" :
+            { "navigationBarTitleText": "eButton 按钮" }  
+        },{
+            "path" : "pages/library/request/index",
+            "style" :
+            { "navigationBarTitleText": "request 请求" }  
+        },{
+            "path" : "pages/library/test/index",
+            "style" :
+            { "navigationBarTitleText": "规则校验" }  
+        },{
+            "path" : "pages/library/imgToBase/index",
+            "style" :                                                                                    
+            { "navigationBarTitleText": "图片转base64" }
+        },{
+            "path" : "pages/library/hrefValue/index",
+            "style" :                                                                                    
+            { "navigationBarTitleText": "获取页面链接所传参数" }
+        }
+        ,{
+            "path" : "pages/library/timestampToTime/index",
+            "style" :                                                                                    
+            { "navigationBarTitleText": "时间戳转换成时间"  }
+        }
+        ,{
+            "path" : "pages/library/previewImage/index",
+            "style" :                                                                                    
+            { "navigationBarTitleText": "预览图片" }
             
         }
         ,{
-            "path" : "pages/library/request/index",
+            "path" : "pages/template/ddLogin/index",
+            "style" :                                                                                    
+            { "navigationBarTitleText": "ddLogin 钉钉登录"  }
+            
+        }
+        ,{
+            "path" : "pages/template/listPaging/index",
+            "style" :                                                                                    
+            { "navigationBarTitleText": "listPaging 列表分页" }
+            
+        }
+        ,{
+            "path" : "pages/template/webview/index",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
+                "navigationBarTitleText": "内嵌网页",
                 "enablePullDownRefresh": false
             }
             
@@ -57,7 +108,7 @@
 	
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
-		"navigationBarTitleText": "云上才",
+		"navigationBarTitleText": "eudesign",
 		"navigationBarBackgroundColor": "#1890ff",
 		"backgroundColor": "#F8F8F8"
 	},
@@ -69,18 +120,18 @@
 		"backgroundColor": "#ffffff",
 		"list": [{
 			"pagePath": "pages/index/index",
-			"iconPath": "static/components.png",
-			"selectedIconPath": "static/components.png",
+			"iconPath": "static/function.png",
+			"selectedIconPath": "static/function-on.png",
 			"text": "组件"
 		}, {
 			"pagePath": "pages/index/tools",
-			"iconPath": "static/demo.png",
-			"selectedIconPath": "static/demo.png",
+			"iconPath": "static/tool.png",
+			"selectedIconPath": "static/tool-on.png",
 			"text": "工具"
 		}, {
 			"pagePath": "pages/index/template",
 			"iconPath": "static/template.png",
-			"selectedIconPath": "static/template.png",
+			"selectedIconPath": "static/template-on.png",
 			"text": "模板"
 		}]
 	}

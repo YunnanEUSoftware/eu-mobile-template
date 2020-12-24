@@ -1,6 +1,6 @@
 <template>
 	<view v-if="show">
-		<u-empty mode="search" :margin-top="marginTop" :text="text" :src="src"></u-empty>
+		<u-empty :mode="mode" :margin-top="marginTop" :color="color" :icon-color="color" :icon-size="size" :text="text" :src="src"></u-empty>
 	</view>
 </template>
 <script>
@@ -13,6 +13,10 @@ export default {
 			type: Boolean,
 			default: false,
 		},
+		mode:{  // 内置图标
+			type: String,
+			default: 'search',
+		},
 		text:{  // 提示文本
 			type: String,
 			default: '',
@@ -21,9 +25,17 @@ export default {
 			type: String,
 			default: "",
 		},
-		marginTop:{ // 距上边距
+		top:{ // 距上边距
 			type: String,
 			default: '500',
+		},
+		color:{ // 颜色
+			type: String,
+			default: '#c0c4cc',
+		},
+		size:{ // 大小
+			type: String,
+			default: '120',
 		},
 	},
 	onLoad:function(){},

@@ -1,7 +1,7 @@
 <template>
 	<view class="container">
 		<view class="template">
-			<e-empty marginTop="100" :show="isEmpty"></e-empty>
+			<e-empty marginTop="100" :show="isEmpty" mode="data"></e-empty>
 		</view>
 		<u-gap height="10" bg-color="#f5f5f5"></u-gap>
 		<view class="code">{{ text }}
@@ -85,7 +85,13 @@
 					<u-th width="20%">参数</u-th><u-th>说明</u-th><u-th>默认值</u-th><u-th>可选值</u-th>
 				</u-tr>
 				<u-tr>
-					<u-td>color</u-td><u-td>文字颜色</u-td><u-td>#c0c4cc</u-td><u-td>-</u-td>
+					<u-td>color</u-td><u-td>文字图标颜色</u-td><u-td>#c0c4cc</u-td><u-td>-</u-td>
+				</u-tr>
+				<u-tr>
+					<u-td>top</u-td><u-td>距上边距</u-td><u-td>500</u-td><u-td>-</u-td>
+				</u-tr>
+				<u-tr>
+					<u-td>size</u-td><u-td>图标大小</u-td><u-td>120</u-td><u-td>-</u-td>
 				</u-tr>
 				<u-tr>
 					<u-td>text</u-td><u-td>文字提示</u-td><u-td>无内容</u-td><u-td>-</u-td>

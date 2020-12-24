@@ -17,4 +17,22 @@
 	@import "uview-ui/index.scss";
 	// @import "common/demo.scss";
 	/*每个页面公共css */
+	
+	.container { padding: 20rpx; }
+	.template { margin: 100rpx 0; }
+	
+	.titles { font-weight: 700; line-height: 40rpx; padding: 10rpx ; font-size: 36rpx; }
+	.title { font-weight: 700; line-height: 40rpx; padding: 10rpx ; }
+	
+	.code { margin: 0 10rpx 40rpx 10rpx; line-height: 40rpx; background-color: #f5f5f5; padding: 8rpx 4rpx;  font-size: 20rpx ;  }
+	.code > view { display: flex; }
+	.word1 { width: 40rpx;}
+	.word2 { width: 80rpx; }
+	.word3 { width: 120rpx; }
+	
+	.tips { line-height: 40rpx; padding: 10rpx 20rpx; }
+	.tips view { line-height: 50rpx; font-weight: 700; }
+	.remark { line-height: 40rpx; padding: 0 20rpx; color: #808080 }
+	
+	
 </style>
