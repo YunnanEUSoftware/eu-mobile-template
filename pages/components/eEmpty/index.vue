@@ -1,7 +1,7 @@
 <template>
 	<view class="container">
 		<view class="template">
-			<e-empty marginTop="100" :show="isEmpty" mode="data"></e-empty>
+			<e-empty top="100" :show="isEmpty" mode="data"></e-empty>
 		</view>
 		<u-gap height="10" bg-color="#f5f5f5"></u-gap>
 		<view class="code">{{ text }}

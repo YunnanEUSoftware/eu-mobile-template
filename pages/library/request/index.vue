@@ -50,8 +50,8 @@
 			getList(){
 				var that = this;
 				this.$eu.api(this.$API.apiUrl.address,{},function(res){
-					that.imageList = res.data
-				})	
+					that.list = res.data
+				},function(res){ console.log('失败') },true)	
 			},
 		}
 	}

@@ -2,7 +2,7 @@
 import app from '../../main.js';
 export default {
 	
-	requestAPI: function(apiUrl, data, success,fail,isloading,method='POST',contentType="form") {
+	requestAPI: function(apiUrl, data, success,fail,isloading= true, method='POST',contentType="form") {
 		var that = this;
 		if(isloading){
 			uni.showLoading({
